@@ -4,15 +4,15 @@ import 'rxjs/add/operator/map'
 import { Album } from './album'
 import { Observable } from 'rxjs/Observable';
 import { Product } from './product';
-//import
+
 @Injectable()
 
 export class ProductService {
 
   private _albumUrl = '../assets/album.json';
 
-  private _productsUrl = '../assests/products.json';
-
+  //private _productsUrl = '../assests/products.json';
+private _productsUrl = '../assets/product.json';
   constructor(private _http: Http) { }
 
   getAlbum(id: number): Observable<Album> {
